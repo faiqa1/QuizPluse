@@ -1,4 +1,4 @@
-// 
+//
 import React, { useState } from "react";
 import { Button, Label, TextInput } from "flowbite-react";
 import { Link } from "react-router-dom";
@@ -51,7 +51,7 @@ export default function Signup() {
       errors.password = "Password is required";
     } else if (!validatePassword(password)) {
       errors.password =
-        "Password must be at least 6 characters long and contain at least one digit, one letter, and one special character";
+        "Password must be at least 8 characters long and contain at least one digit, one letter, and one special character";
     }
 
     // if (Object.keys(errors).length === 0) {
@@ -73,7 +73,8 @@ export default function Signup() {
       };
 
       // Send POST request to the backend
-      axios.post("YOUR_BACKEND_API_URL", formData)
+      axios
+        .post("YOUR_BACKEND_API", formData)
         .then((response) => {
           console.log("Form data submitted successfully:", response.data);
           // Optionally, you can show a success message here using toast.success()
@@ -85,7 +86,6 @@ export default function Signup() {
     } else {
       setErrors(errors);
     }
-
   };
 
   return (
@@ -95,7 +95,11 @@ export default function Signup() {
         <form className="flex max-w-md flex-col gap-4" onSubmit={handleSubmit}>
           <div>
             <div className="mb-2 block">
-              <Label htmlFor="name1" value="Please enter your name" className="text-white font-bold" />
+              <Label
+                htmlFor="name1"
+                value="Please enter your name"
+                className="text-white font-bold"
+              />
             </div>
             <TextInput
               id="name1"
@@ -110,7 +114,11 @@ export default function Signup() {
           </div>
           <div>
             <div className="mb-2 block">
-              <Label htmlFor="email2" value="Please enter your email" className="text-white font-bold" />
+              <Label
+                htmlFor="email2"
+                value="Please enter your email"
+                className="text-white font-bold"
+              />
             </div>
             <TextInput
               id="email2"
@@ -125,7 +133,11 @@ export default function Signup() {
           </div>
           <div>
             <div className="mb-2 block">
-              <Label htmlFor="password2" value="Please enter your password" className="text-white font-bold" />
+              <Label
+                htmlFor="password2"
+                value="Please enter your password"
+                className="text-white font-bold"
+              />
             </div>
             <TextInput
               id="password2"
@@ -148,7 +160,10 @@ export default function Signup() {
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 onChange={() => setUserType("teacher")}
               />
-              <label htmlFor="teacher-radio" className="ms-2 text-sm text-white font-bold">
+              <label
+                htmlFor="teacher-radio"
+                className="ms-2 text-sm text-white font-bold"
+              >
                 Teacher
               </label>
             </div>
@@ -161,18 +176,24 @@ export default function Signup() {
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 onChange={() => setUserType("student")}
               />
-              <label htmlFor="student-radio" className="ms-2 text-sm text-white font-bold">
+              <label
+                htmlFor="student-radio"
+                className="ms-2 text-sm text-white font-bold"
+              >
                 Student
               </label>
             </div>
           </div>
           <div className="d-flex">
-          <Button type="submit"  className="w-150 mx-auto bg-white text-purple">
-            Sign Up
-          </Button>
-          <Link to="/login" className="text-md ml-8 font-bold text-white">
-            Already Have an Account?
-          </Link>
+            <Button
+              type="submit"
+              className="w-150 mx-auto bg-white text-purple"
+            >
+              Sign Up
+            </Button>
+            <Link to="/login" className="text-md ml-8 font-bold text-white">
+              Already Have an Account?
+            </Link>
           </div>
         </form>
       </div>

@@ -5,6 +5,7 @@ import annoucement from '../Images/annoucement.jpg'
 import feedback from '../Images/feedback.jpg'
 import resource from '../Images/resource.jpg'
 import { Link } from 'react-router-dom';
+import LeaderBoard from './LeaderBoard';
 
 export default function StudentHomePage() {
   return (
@@ -30,7 +31,7 @@ export default function StudentHomePage() {
       </p>
     </Card>
     </Link>
-    <Link to =''>
+    <Link to ='/viewquiz'>
     <Card className="max-w-sm w-96 h-64 m-5" imgSrc={annoucement} horizontal>
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
        Annoucement
@@ -40,7 +41,7 @@ export default function StudentHomePage() {
       </p>
     </Card>
     </Link>
-    <Link to =''>
+    <Link to ='/comment'>
     <Card className="max-w-sm w-96 h-64 m-5" imgSrc={feedback} horizontal>
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
        Discussion Forum
@@ -51,8 +52,9 @@ export default function StudentHomePage() {
     </Card>
     </Link>
     </div>
-    <div className='leaderboard'>
-        <h1>Leaderboard</h1>
+    <div className='leaderboard mt-10 mr-10'>
+      <h3 className='bg-purple text-white h-16 text-center pt-7 font-bold rounded-lg'>LeaderBoard</h3>
+       <LeaderBoard/>
     </div>
     </div>
   )
