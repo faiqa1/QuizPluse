@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Header from "./Components/Header";
-import SectionOne from "./Components/SectionOne";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Signup from "./Components/Signup";
 import Login from "./Components/Login";
@@ -13,16 +12,16 @@ import { UploadDoc } from "./Components/uploadDoc";
 import ViewQuiz from "./Components/ViewQuiz";
 import LeaderBoard from "./Components/LeaderBoard";
 import CommentForm from "./Components/CommentForm";
+import LandingPage from "./Components/LandingPage";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Header />
-        {/* <SectionOne/> */}
         <Routes>
           <Route path="/signup" element={<Signup />} />
-          <Route path="/home" element={<SectionOne />} />
+          <Route path="/home" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/studenthomepage" element={<StudentHomePage />} />
           <Route path="/teacherhomepage" element={<TeacherHomePage />} />
