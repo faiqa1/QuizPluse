@@ -1,30 +1,36 @@
-import React from 'react'
-import signup from '../Images/sign-up.jpg'
-import profile from '../Images/createAccount.jpg'
-import play from '../Images/startQuiz.jpg'
-
+import React from "react";
+import signup from "../Images/sign-up.jpg";
+import profile from "../Images/createAccount.jpg";
+import play from "../Images/startQuiz.jpg";
 
 export default function HowItWorks() {
   return (
-    <div className=' mt-10 '>
-        <h1 className='text-purple font-bold text-2xl text-center'>How it works?</h1>
-       <div className='flex justify-content'>
-         <div>
-            <img src={signup} className='w-[302px]'/>
-            <h4 className='text-gray-700 font-bold text-xl text-center'>Signup</h4>
-         </div>
+    <div className=" mt-10 ">
+      <h1 className="text-purple font-bold text-2xl text-center">
+        How it works?
+      </h1>
+      <div className="flex justify-content">
+        <div>
+          <img src={signup} className="w-[302px]" />
+          <h4 className="text-gray-700 font-bold text-xl text-center">
+            Signup
+          </h4>
+        </div>
 
-         <div>
-            <img src={profile} className='w-[302px]'/>
-            <h4 className='text-gray-700 font-bold text-xl text-center'>Create Profile</h4>
-         </div>
+        <div>
+          <img src={profile} className="w-[302px]" />
+          <h4 className="text-gray-700 font-bold text-xl text-center">
+            Create Profile
+          </h4>
+        </div>
 
-         <div>
-            <img src={play} className='w-[280px]'/>
-            <h4 className='text-gray-700 font-bold text-center mt-7 text-xl '>Start Play</h4>
-         </div>
-
-       </div>
+        <div>
+          <img src={play} className="w-[280px]" />
+          <h4 className="text-gray-700 font-bold text-center mt-7 text-xl ">
+            Start Play
+          </h4>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
