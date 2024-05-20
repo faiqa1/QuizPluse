@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FaCrown } from "react-icons/fa";
+import LeaderBoard from './LeaderBoard';
 
 function CommentSection() {
   const [comments, setComments] = useState([]);
@@ -37,7 +39,8 @@ function CommentSection() {
   };
 
   return (
-    <div className='mt-5 h-[300px] w-[53%] text-center bg-purple ml-[20%] rounded-[20px] '>
+    <div className='flex'>
+    <div className='mt-[8%]  mr-10 h-[300px] w-[53%] text-center bg-purple ml-[20%] rounded-[20px] '>
       <form onSubmit={handleSubmit} className='pt-12'>
         <input
           className='pt-8 border-none rounded-lg'
@@ -47,7 +50,7 @@ function CommentSection() {
           placeholder="Write your comment..."
         />
         <br/>
-        <button type="submit" className='mr-2 mt-2 p-[9px] px-[18px] bg-white text-purple rounded-md font-bold'>Submit</button>
+        <button type="submit" className='mr-2 mt-5 p-[9px] px-[18px] bg-white text-purple rounded-md font-bold'>Submit</button>
        </form>
       <div className='commentWrapper'>
       <div>
@@ -59,6 +62,13 @@ function CommentSection() {
         ))}
       </div>
       </div>
+    </div>
+    <div className='leaderboard mt-10 mr-10'>
+      <h3 className='bg-purple text-white h-16 text-center pt-7 font-bold rounded-lg'>LeaderBoard
+      <FaCrown className='crown'/>
+      </h3>
+       <LeaderBoard/>
+    </div>
     </div>
   );
 }

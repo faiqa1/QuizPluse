@@ -13,6 +13,7 @@ import ViewQuiz from "./Components/ViewQuiz";
 import LeaderBoard from "./Components/LeaderBoard";
 import CommentForm from "./Components/CommentForm";
 import LandingPage from "./Components/LandingPage";
+import AttemptQuiz from "./Components/AttemptQuiz";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/viewquiz" element={<ViewQuiz />} />
           <Route path="/leaderboard" element={<LeaderBoard />} />
           <Route path="/comment" element={<CommentForm />} />
+          <Route path="/attempt" element={<AttemptQuiz/>} />
         </Routes>
         <FooterComp />
       </BrowserRouter>

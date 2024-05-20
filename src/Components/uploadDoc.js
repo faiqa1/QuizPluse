@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { FileInput, Label } from "flowbite-react";
+import { FaCrown } from "react-icons/fa";
+import LeaderBoard from './LeaderBoard';
 
 export function UploadDoc() {
   const [uploadedFiles, setUploadedFiles] = useState([]);
@@ -10,10 +12,10 @@ export function UploadDoc() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center mt-10">
+    <div className="flex  items-center justify-center mt-10">
       <Label
         htmlFor="dropzone-file"
-        className="flex h-64 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+        className="flex h-64 w-[60%] mr-[5%] cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600"
       >
         <div className="flex flex-col items-center justify-center pb-6 pt-5">
           <svg
@@ -58,6 +60,13 @@ export function UploadDoc() {
           </ul>
         </div>
       )}
+
+<div className='leaderboard mt-10 mr-10'>
+      <h3 className='bg-purple text-white h-16 text-center pt-7 font-bold rounded-lg'>LeaderBoard
+      <FaCrown className='crown'/>
+      </h3>
+       <LeaderBoard/>
+    </div>
     </div>
   );
 }

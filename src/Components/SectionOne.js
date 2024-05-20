@@ -36,7 +36,7 @@ export default function SectionOne() {
       style={{ fontSize: '2em', display: 'inline-block' }}
     />
         <h5 className="w-1/2 text-base font-bold pl-12 pt-5 text-gray-700">
-          QuizWiz is a daily quiz playing platfrm. It brings some <br />
+          QuizWiz is a daily quiz playing platform. It brings some <br />
           exciting surprises every day.
         </h5>
         <h5 className="w-1/2 text-base font-bold pl-12  text-gray-700">

@@ -6,6 +6,7 @@ import upload from "../Images/addDoc.jpg";
 import createQuiz from "../Images/createQuiz.jpg";
 import LeaderBoard from "./LeaderBoard";
 import { Link } from "react-router-dom";
+import { FaCrown } from "react-icons/fa";
 
 export default function TeacherHomePage() {
   return (
@@ -62,6 +63,7 @@ export default function TeacherHomePage() {
       <div className="leaderboardWrapper mt-10 mr-10">
         <h3 className="bg-purple text-white h-16 text-center pt-7 font-bold rounded-lg">
           LeaderBoard
+          <FaCrown className='crown'/>
         </h3>
         <LeaderBoard />
       </div>

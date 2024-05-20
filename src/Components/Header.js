@@ -22,7 +22,7 @@ function Header() {
         <div className="flex md:order-2">
           <Button className="text-white text-2xl">
             {" "}
-            <Link to="/signup" className="text-white font-bold">Get started</Link>
+            <Link to="/signup" className="text-l text-white font-bold">Get started</Link>
           </Button>
           <NavbarToggle />
         </div>

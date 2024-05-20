@@ -6,12 +6,13 @@ import feedback from '../Images/feedback.jpg'
 import resource from '../Images/resource.jpg'
 import { Link } from 'react-router-dom';
 import LeaderBoard from './LeaderBoard';
+import { FaCrown } from "react-icons/fa";
 
 export default function StudentHomePage() {
   return (
     <div className='studentHomePageWrapper flex'>
-    <div className='cardWrapper mt-10'>
-        <Link to =''>
+    <div className='cardWrapper mt-5'>
+        <Link to ='/attempt'>
       <Card className="max-w-sm w-96 h-64 m-5" imgSrc={attemptQuiz} horizontal>
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
        Attempt Quiz
@@ -53,7 +54,9 @@ export default function StudentHomePage() {
     </Link>
     </div>
     <div className='leaderboard mt-10 mr-10'>
-      <h3 className='bg-purple text-white h-16 text-center pt-7 font-bold rounded-lg'>LeaderBoard</h3>
+      <h3 className='bg-purple text-white h-16 text-center pt-7 font-bold rounded-lg'>LeaderBoard
+      <FaCrown className='crown'/>
+      </h3>
        <LeaderBoard/>
     </div>
     </div>
