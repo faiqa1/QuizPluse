@@ -44,7 +44,7 @@ function Header() {
             Blog
           </NavbarLink>
           <NavbarLink href="#" className="text-lg font-bold">
-            Contact
+            How it Works
           </NavbarLink>
         </NavbarCollapse>
       </Navbar>

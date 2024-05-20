@@ -2,7 +2,8 @@ import React from 'react'
 import SectionOne from './SectionOne'
 import { SectionTwo } from './SectionTwo'
 import AboutUs from './AboutUs'
-import Contactus from './Contactus'
+import HowItWorks from './HowItWorks'
+import Review from './Review'
 
 export default function LandingPage() {
   return (
@@ -10,7 +11,8 @@ export default function LandingPage() {
     <SectionOne/>
     <SectionTwo/>
     <AboutUs/>
-    <Contactus/>
+    <HowItWorks/>
+    <Review/>
     </>
   )
 }
