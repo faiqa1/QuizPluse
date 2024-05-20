@@ -136,7 +136,7 @@ export default function Review() {
             </div>
             <blockquote>
               <p class=" font-semibold text-gray-700 dark:text-white">
-                "I love using QuizMaster! The diverse range of quizzes keeps me
+                "I love using QuizWiz! The diverse range of quizzes keeps me
                 coming back for more. Whether I'm preparing for a test or just
                 passing the time, the app always has something interesting to
                 offer. It's a must-have for trivia enthusiasts and learners
@@ -211,7 +211,7 @@ export default function Review() {
             </div>
             <blockquote>
               <p class="font-semibold text-gray-700 dark:text-white">
-                "QuizMaster is a game-changer. From general knowledge to niche
+                "QuizWiz is a game-changer. From general knowledge to niche
                 topics, the app covers it all with well-designed quizzes that
                 are both fun and educational. It's the perfect tool for
                 enhancing your skills, competing with friends, and staying
