@@ -1,68 +1,55 @@
-import React from 'react'
+import React from "react";
 import { Card, Button } from "flowbite-react";
+import trivia from "../Images/bulb.jpg";
+import { Link } from "react-router-dom";
+import crown from "../Images/crown.jpg";
+import win from "../Images/win.jpg";
 
 export function SectionTwo() {
   return (
-    <div className='flex'>
-     <Card 
-     className="max-w-sm"
-     imgAlt="Meaningful alt text for an image that is not purely decorative"
-     imgSrc="/images/blog/image-1.jpg">
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Noteworthy technology acquisitions 2021
-      </h5>
-      <p className="font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-      </p>
-      <Button>
-        Read more
-        <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path
-            fillRule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </Button>
-    </Card>
-
-    <Card className="max-w-sm">
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Noteworthy technology acquisitions 2021
-      </h5>
-      <p className="font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-      </p>
-      <Button>
-        Read more
-        <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path
-            fillRule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </Button>
-    </Card>
-
-    <Card className="max-w-sm">
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Noteworthy technology acquisitions 2021
-      </h5>
-      <p className="font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-      </p>
-      <Button>
-        Read more
-        <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path
-            fillRule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </Button>
-    </Card>
-    </div>);
-
+    <>
+      <div>
+        <h1 className="text-3xl font-bold ml-11 pt-10 w-1/2 text-purple text-center">
+          Play, Learn and Earn Bonus
+        </h1>
+        <h4 className="text-3xl font-bold ml-11 pt-5 w-1/2 text-purple text-center">
+          Check yourself!! Earn yourself
+        </h4>
+      </div>
+      <h3 className="text-xl font-bold pl-12 pt-20 w-1/2 text-gray-700 text-center ml-18">
+        Choose the option
+      </h3>
+      <div className=" mt-10">
+        <div className="cardWrapper">
+          <Card className="w-96 h-20 ">
+            <img src={trivia} className="img-hw" />
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+              Daily Trivia
+            </h5>
+            <Link to="/signup" className="bg-purple text-white font-bold btn-read-more">
+              Read more
+            </Link>
+          </Card>
+          <Card className="w-96 h-20 ml-10 mr-10 ">
+            <img src={win} className="img-hw" />
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+              Daily Play & Win
+            </h5>
+            <Link to="/signup" className="bg-purple text-white font-bold btn-read-more ">
+              Read more
+            </Link>
+          </Card>
+          <Card className="w-96 h-20">
+            <img src={crown} className="img-hw" />
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+              Play Like king
+            </h5>
+            <Link to="/signup" className="bg-purple text-white font-bold btn-read-more">
+              Read more
+            </Link>
+          </Card>
+        </div>
+      </div>
+    </>
+  );
 }
