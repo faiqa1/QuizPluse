@@ -22,7 +22,7 @@ export default function StudentHomePage() {
       </p>
     </Card> 
     </Link>
-    <Link to =''>
+    <Link to ='/viewdocs'>
     <Card className="max-w-sm w-96 h-64 m-5" imgSrc={resource} horizontal>
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
        Resource and Material 
