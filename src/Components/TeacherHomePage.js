@@ -7,9 +7,12 @@ import createQuiz from "../Images/createQuiz.jpg";
 import LeaderBoard from "./LeaderBoard";
 import { Link } from "react-router-dom";
 import { FaCrown } from "react-icons/fa";
+import Analytics from "./Analytics";
+
 
 export default function TeacherHomePage() {
   return (
+    <>
     <div className="teacherHomepageWrapper flex">
       <div className="cardWrapper mt-5">
         <Link to="/cquiz">
@@ -68,5 +71,7 @@ export default function TeacherHomePage() {
         <LeaderBoard />
       </div>
     </div>
+    <Analytics/>
+    </>
   );
 }
