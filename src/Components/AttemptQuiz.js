@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import LeaderBoard from "./LeaderBoard";
+import { FaCrown } from "react-icons/fa";
 
 export default function AttemptQuiz() {
     const [quizData, setQuizData] = useState({
@@ -207,6 +208,7 @@ export default function AttemptQuiz() {
     <div className="leaderboardWrapper">
       <h3 className="bg-purple text-white h-16 text-center pt-7 font-bold rounded-lg">
         LeaderBoard
+        <FaCrown className='crown'/>
       </h3>
       <LeaderBoard />
     </div>
