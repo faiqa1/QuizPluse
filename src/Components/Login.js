@@ -2,10 +2,11 @@
 import React, { useState } from "react";
 import { Button, Label, TextInput } from "flowbite-react";
 import img from "../Images/img.jpg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function Login() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
@@ -29,32 +30,40 @@ export default function Login() {
     if (!password.trim()) {
       errors.password = "Password is required";
     }
-
     if (Object.keys(errors).length === 0) {
-      // Prepare data to send to the backend
-      const formData = {
-        email: email,
-        password: password,
-      };
-
-      // Send POST request to fetch data from the backend
-      axios
-        .post("YOUR_BACKEND_API", formData)
-        .then((response) => {
-          console.log("Login successful:", response.data);
-          // Optionally, you can redirect the user to another page or store authentication token in localStorage
-        })
-        .catch((error) => {
-          console.error("Error logging in:", error);
-          if (error.response.status === 401) {
-            setLoginError("Incorrect email or password");
-          } else {
-            setLoginError("An error occurred. Please try again later.");
-          }
-        });
+      console.log("Email:", email);
+      console.log("Password:", password);
+      navigate("/studenthomepage"); 
+      // Here you can submit the form or perform any other actions
     } else {
       setErrors(errors);
     }
+
+    // if (Object.keys(errors).length === 0) {
+    //   // Prepare data to send to the backend
+    //   const formData = {
+    //     email: email,
+    //     password: password,
+    //   };
+
+    //   // Send POST request to fetch data from the backend
+    //   axios
+    //     .post("YOUR_BACKEND_API", formData)
+    //     .then((response) => {
+    //       console.log("Login successful:", response.data);
+    //       // Optionally, you can redirect the user to another page or store authentication token in localStorage
+    //     })
+    //     .catch((error) => {
+    //       console.error("Error logging in:", error);
+    //       if (error.response.status === 401) {
+    //         setLoginError("Incorrect email or password");
+    //       } else {
+    //         setLoginError("An error occurred. Please try again later.");
+    //       }
+    //     });
+    // } else {
+    //   setErrors(errors);
+    // }
   };
 
   return (

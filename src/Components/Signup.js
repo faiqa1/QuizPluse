@@ -1,23 +1,19 @@
-//
 import React, { useState } from "react";
 import { Button, Label, TextInput } from "flowbite-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import img from "../Images/img.jpg";
-import { toast, ToastContainer } from "react-toastify";
+// import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
 export default function Signup() {
+  const navigate = useNavigate();
   const [userType, setUserType] = useState(""); // State to store user type
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
-  // const showToastMessage = () => {
-  //   toast.success("Success Notification !", {
-  //     position: toast.POSITION.TOP_RIGHT,
-  //   })
-  // };
+
 
   const validateEmail = (email) => {
     // Regular expression for email validation
@@ -54,38 +50,39 @@ export default function Signup() {
         "Password must be at least 8 characters long and contain at least one digit, one letter, and one special character";
     }
 
-    // if (Object.keys(errors).length === 0) {
-    //   console.log("User type selected:", userType);
-    //   console.log("Name:", name);
-    //   console.log("Email:", email);
-    //   console.log("Password:", password);
-    //   // Here you can submit the form or perform any other actions
-    // } else {
-    //   setErrors(errors);
-    // }
     if (Object.keys(errors).length === 0) {
-      // Prepare data to send to the backend
-      const formData = {
-        name: name,
-        email: email,
-        password: password,
-        userType: userType,
-      };
-
-      // Send POST request to the backend
-      axios
-        .post("YOUR_BACKEND_API", formData)
-        .then((response) => {
-          console.log("Form data submitted successfully:", response.data);
-          // Optionally, you can show a success message here using toast.success()
-        })
-        .catch((error) => {
-          console.error("Error submitting form data:", error);
-          // Optionally, you can show an error message here using toast.error()
-        });
+      console.log("User type selected:", userType);
+      console.log("Name:", name);
+      console.log("Email:", email);
+      console.log("Password:", password);
+      navigate("/login"); 
+      // Here you can submit the form or perform any other actions
     } else {
       setErrors(errors);
     }
+    // if (Object.keys(errors).length === 0) {
+    //   // Prepare data to send to the backend
+    //   const formData = {
+    //     name: name,
+    //     email: email,
+    //     password: password,
+    //     userType: userType,
+    //   };
+
+      // Send POST request to the backend
+      // axios
+      //   .post("YOUR_BACKEND_API", formData)
+      //   .then((response) => {
+      //     console.log("Form data submitted successfully:", response.data);
+      //     // Optionally, you can show a success message here using toast.success()
+      //   })
+      //   .catch((error) => {
+      //     console.error("Error submitting form data:", error);
+      //     // Optionally, you can show an error message here using toast.error()
+      //   });
+    // } else {
+    //   setErrors(errors);
+    // }
   };
 
   return (
