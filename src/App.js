@@ -15,6 +15,7 @@ import CommentForm from "./Components/CommentForm";
 import LandingPage from "./Components/LandingPage";
 import AttemptQuiz from "./Components/AttemptQuiz";
 import ViewDocs from "./Components/ViewDocs";
+import Blog from "./Components/Blog";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/comment" element={<CommentForm />} />
           <Route path="/attempt" element={<AttemptQuiz/>} />
           <Route path='/viewdocs' element={<ViewDocs/>}/>
+          <Route path='/blog' element={<Blog/>}/>
         </Routes>
         <FooterComp />
       </BrowserRouter>

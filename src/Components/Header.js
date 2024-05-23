@@ -40,8 +40,8 @@ function Header() {
           <NavbarLink href="#" className="text-lg font-bold">
           <Link to='/signup'>Quiz</Link> 
           </NavbarLink>
-          <NavbarLink href="#" className="text-lg font-bold">
-            Blog
+          <NavbarLink href="" className="text-lg font-bold">
+           <Link to='/blog'>Blog</Link>
           </NavbarLink>
           <NavbarLink href="#hitw" className="text-lg font-bold">
             How it Works
