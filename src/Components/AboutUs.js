@@ -17,9 +17,9 @@ export default function AboutUs() {
           to learn! . With quizzes spanning a wide array of subjects and
           difficulty levels, there's something for everyone. Whether you're
           looking to challenge yourself, compete with friends, or prepare for an
-          exam, QuizWiz offers an engaging and educational platform that
-          makes learning fun and interactive. Join us today and turn every
-          question into an opportunity for growth!
+          exam, QuizWiz offers an engaging and educational platform that makes
+          learning fun and interactive. Join us today and turn every question
+          into an opportunity for growth!
         </p>
       </div>
     </div>

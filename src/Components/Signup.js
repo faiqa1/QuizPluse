@@ -14,7 +14,6 @@ export default function Signup() {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
 
-
   const validateEmail = (email) => {
     // Regular expression for email validation
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -55,7 +54,7 @@ export default function Signup() {
       console.log("Name:", name);
       console.log("Email:", email);
       console.log("Password:", password);
-      navigate("/login"); 
+      navigate("/login");
       // Here you can submit the form or perform any other actions
     } else {
       setErrors(errors);
@@ -69,17 +68,17 @@ export default function Signup() {
     //     userType: userType,
     //   };
 
-      // Send POST request to the backend
-      // axios
-      //   .post("YOUR_BACKEND_API", formData)
-      //   .then((response) => {
-      //     console.log("Form data submitted successfully:", response.data);
-      //     // Optionally, you can show a success message here using toast.success()
-      //   })
-      //   .catch((error) => {
-      //     console.error("Error submitting form data:", error);
-      //     // Optionally, you can show an error message here using toast.error()
-      //   });
+    // Send POST request to the backend
+    // axios
+    //   .post("YOUR_BACKEND_API", formData)
+    //   .then((response) => {
+    //     console.log("Form data submitted successfully:", response.data);
+    //     // Optionally, you can show a success message here using toast.success()
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error submitting form data:", error);
+    //     // Optionally, you can show an error message here using toast.error()
+    //   });
     // } else {
     //   setErrors(errors);
     // }

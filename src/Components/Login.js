@@ -33,7 +33,7 @@ export default function Login() {
     if (Object.keys(errors).length === 0) {
       console.log("Email:", email);
       console.log("Password:", password);
-      navigate("/studenthomepage"); 
+      navigate("/studenthomepage");
       // Here you can submit the form or perform any other actions
     } else {
       setErrors(errors);
