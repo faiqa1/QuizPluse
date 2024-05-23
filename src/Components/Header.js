@@ -34,16 +34,16 @@ function Header() {
           >
             <Link to="/home">Home</Link>
           </NavbarLink>
-          <NavbarLink href="#" className="text-lg font-bold">
-           <Link to ='/'> About </Link>
+          <NavbarLink href="#about" className="text-lg font-bold">
+            About 
           </NavbarLink>
           <NavbarLink href="#" className="text-lg font-bold">
-            Quiz
+          <Link to='/signup'>Quiz</Link> 
           </NavbarLink>
           <NavbarLink href="#" className="text-lg font-bold">
             Blog
           </NavbarLink>
-          <NavbarLink href="#" className="text-lg font-bold">
+          <NavbarLink href="#hitw" className="text-lg font-bold">
             How it Works
           </NavbarLink>
         </NavbarCollapse>

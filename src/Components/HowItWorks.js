@@ -5,7 +5,7 @@ import play from "../Images/startQuiz.jpg";
 
 export default function HowItWorks() {
   return (
-    <div className=" mt-10 ">
+    <div className=" mt-10 " id="hitw">
       <h1 className="text-purple font-bold text-2xl text-center">
         How it works?
       </h1>

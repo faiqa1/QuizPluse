@@ -2,7 +2,7 @@ import React from "react";
 import about from "../Images/aboutus.png";
 export default function AboutUs() {
   return (
-    <div className="aboutUs mt-10 ml-12 flex">
+    <div className="aboutUs mt-10 ml-12 flex" id="about">
       <img className="w-1/3" src={about} />
       <div className="ml-10">
         <h2 className="text-purple font-bold text-xl">About Us</h2>
