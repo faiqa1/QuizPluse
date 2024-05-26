@@ -23,7 +23,9 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
+       
         <Routes>
+        <Route index element={<LandingPage/>}/>
           <Route path="/signup" element={<Signup />} />
           <Route path="/home" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
