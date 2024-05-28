@@ -1,3 +1,38 @@
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+
+// const Leaderboard = () => {
+//   const [leaderboardData, setLeaderboardData] = useState([]);
+
+//   useEffect(() => {
+//     const fetchLeaderboardData = async () => {
+//       try {
+//         const response = await axios.get('http://localhost:8080/api/quiz/getleaderdashboard');
+//         setLeaderboardData(response.data.data);
+//       } catch (error) {
+//         console.error('Error fetching leaderboard data:', error);
+//       }
+//     };
+
+//     fetchLeaderboardData();
+//   }, []);
+
+//   return (
+//     <div className='relative overflow-x-auto w-1/2'>
+//       {/* <h2>Leaderboard</h2> */}
+//       <ul>
+//         {leaderboardData.map((entry, index) => (
+//           <li key={index}>
+//             <span>{entry.studentName}</span> - <span>{entry.totalMarks}</span> -{' '}
+//             <span>{entry.badgeAssigned}</span>
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// };
+
+// export default Leaderboard;
 import React from "react";
 import { GiAchievement } from "react-icons/gi";
 // Function to map badge based on marks
