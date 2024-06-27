@@ -16,6 +16,7 @@ import LandingPage from "./Components/LandingPage";
 import AttemptQuiz from "./Components/AttemptQuiz";
 import ViewDocs from "./Components/ViewDocs";
 import Blog from "./Components/Blog";
+import Test from "./Components/Test";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/attempt" element={<AttemptQuiz/>} />
           <Route path='/viewdocs' element={<ViewDocs/>}/>
           <Route path='/blog' element={<Blog/>}/>
+          <Route path='test' element={<Test/>}/>
         </Routes>
         <FooterComp />
       </BrowserRouter>
