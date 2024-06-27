@@ -40,7 +40,7 @@ function Header() {
           >
             <Link to="/home">Home</Link>
           </NavbarLink>
-          <NavbarLink href="#about" className="text-lg font-bold">
+          <NavbarLink href="/studenthomepage" className="text-lg font-bold">
             About
           </NavbarLink>
           <NavbarLink href="#" className="text-lg font-bold">
