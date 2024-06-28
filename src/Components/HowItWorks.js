@@ -11,21 +11,21 @@ export default function HowItWorks() {
       </h1>
       <div className="flex justify-content">
         <div>
-          <img src={signup} className="w-[302px]" />
+          <img src={signup} className="w-[302px]" alt="signup"/>
           <h4 className="text-gray-700 font-bold text-xl text-center">
             Signup
           </h4>
         </div>
 
         <div>
-          <img src={profile} className="w-[302px]" />
+          <img src={profile} className="w-[302px]" alt="proofule"/>
           <h4 className="text-gray-700 font-bold text-xl text-center">
             Create Profile
           </h4>
         </div>
 
         <div>
-          <img src={play} className="w-[280px]" />
+          <img src={play} className="w-[280px]" alt="play" />
           <h4 className="text-gray-700 font-bold text-center mt-7 text-xl ">
             Start Play
           </h4>

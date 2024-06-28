@@ -54,7 +54,7 @@ export default function SectionOne() {
       </div>
         {/* <Button className="flex ml-10 mt-5 bg-purple text-white font-extrabold">Play Now</Button> */}
       </div>
-      <img className="w-1/3 float-right mt--23" src={img} />
+      <img className="w-1/3 float-right mt--23" src={img} alt="bannerimage" />
     </div>
   );
 }
